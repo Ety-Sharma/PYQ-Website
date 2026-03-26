@@ -1,0 +1,285 @@
+.landing-page{
+    background-color:rgb(175, 39, 39);
+    text-align: center;
+    color: aliceblue;
+    margin-top: 50vh;
+    text-shadow: 10;
+    font-size:xx-large;
+}
+.subscript{
+    font-size: medium !important;
+}
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color:rgb(175, 39, 39); ;
+    color: aliceblue;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 2px;
+    z-index: 1000;
+}
+.main-footer{
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 70px;
+     background-color: rgb(84, 71, 56);
+      color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 18px;
+}
+/* Progress Bar */
+.progress-container {
+    width: 60%;
+    height: 8px;
+    background-color: rgba(255,255,255,0.3);
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    transition: width 0.03s linear;
+}
+
+/* Fade Animation */
+.fade-out {
+    animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+/*messageBox*/
+#msg {
+    position: fixed;
+    top: -100px; /* hidden initially */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+
+    background-color: #333; /* same color for all messages */
+    color: white;
+    text-align: center;
+
+    padding: 12px;
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    transition: top 0.4s ease;
+    z-index: 1000;
+}
+.login-form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   
+   margin-top: 0;
+   padding-top: 70px;
+   
+   background-image: url("https://img.freepik.com/premium-photo/inscription-exam-different-stationary-grey-closeup_185193-8914.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat; 
+   
+}
+
+.typeOfExam{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin-top: 0;
+   padding-top: 70px;
+    background-image: url("https://img.freepik.com/premium-photo/inscription-exam-different-stationary-grey-closeup_185193-8914.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+form{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    width: 320px; 
+}
+button{
+    padding: 8px 20px;
+    background-color: rgb(224, 213, 213);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+        background-color:antiquewhite;
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px;
+}
+input{
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+input:hover{
+    border-color: rgb(84, 71, 56);
+    box-shadow: 0 0 5px;
+}
+input:focus{
+    border-color:rgb(84, 71, 56);
+    box-shadow: 0 0 8px;
+}
+/*search bar section*/
+.search-section{
+    margin-top: 150px; /*space below header */
+    text-align: center;
+}
+#search{
+    width: 350px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+#search:focus{
+    border-color: #007BFF;
+    box-shadow: 0 0 5px;
+}
+/*CARD CONTAINER*/
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+    padding: 20px;
+}
+/* CARD DESIGN*/
+.card{
+    width: 200px;
+    background: linear-gradient(135deg,#4facfe,#00f3fe);
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px;
+}
+.card:hover{
+    transform: scale(1.08);
+}
+.card-icon{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.card h3{
+    font-size: 18px;
+}
+#suggestions{
+    width: 350px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px;
+    position: relative;
+}
+.suggestion-item{
+    padding:10px;
+    cursor: pointer;
+    border-bottom: 1px solid;
+}
+.suggestion-item:hover{
+    background: #f2f2f2;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 600px) {
+
+    /* Header */
+    .main-header {
+        height: 70px;
+        font-size: 22px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    /* Footer */
+    .main-footer {
+        height: 60px;
+        font-size: 14px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    /* Landing page text */
+    .landing-page {
+        font-size: 20px;
+        margin-top: 40vh;
+        padding: 10px;
+    }
+
+    /* Form */
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Login page background spacing */
+    .login-form {
+        padding: 80px 10px;
+    }
+
+    /* Search bar */
+    #search {
+        width: 90%;
+    }
+
+    /* Suggestions box */
+    #suggestions {
+        width: 90%;
+    }
+
+    /* Cards */
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Type of exam section */
+    .typeOfExam {
+        padding: 80px 10px;
+    }
+}

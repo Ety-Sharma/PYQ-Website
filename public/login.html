@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="login-form">
+   
+    <header class="main-header">PYQ ADDa</header>
+    
+        <form onsubmit="event.preventDefault();">
+           <label for="username" >Username</label>
+        <input type="text" id="name" placeholder="Enter Name"/>
+           <br><br></br>
+
+        <label for="email" >E-mail</label>
+        <input type="email" id="email" placeholder="Enter e-mail"/>
+           <br><br></br>
+
+
+        <label for="password" >Password</label>
+        <input type="password" id="password" placeholder="Enter Password"/>
+           <br><br></br>
+           <p>Already Exists</p>
+
+            <button type="button" onclick="login()">Login</button>
+           <br></br>
+           <p>New user</p>
+
+          <button type="button" onclick="signup()">SignUp</button>
+
+           <p onclick="forgotPassword()" style="cursor:pointer; color:blue;">
+           Forgot Password?</p>
+        </form>
+        
+        <div id="msg"></div>
+       
+    
+     <footer class="main-footer">About Us</footer>
+     <script src="auth.js"></script>
+    
+</body>
+</html>

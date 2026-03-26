@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing-page">
+    
+    <h1>PYQ ADDa
+        <sub class="subscript">Let's move with pace</sub>
+    </h1>
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+    <script>
+        
+    let progress = document.querySelector(".progress-bar");
+
+    let width = 0;
+    let interval = setInterval(() => {
+        width++;
+        progress.style.width = width + "%";
+
+        if (width >= 100) {
+            clearInterval(interval);
+
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = "/login.html";
+            }, 500);
+        }
+    }, 30); // total ~3 seconds
+</script>
+        
+</body>
+</html>
