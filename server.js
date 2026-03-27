@@ -46,6 +46,7 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public")); // if your frontend is in public folder
 app.use(session({
     secret:"secret-key",
@@ -55,10 +56,9 @@ app.use(session({
 
 // 🔗 Connect to MongoDB
 // mongoose.connect("mongodb://127.0.0.1:27017/pyqadda")
-mongoose.connect("mongodb+srv://meetysharma15_db_user:dbEty1234@cluster0.8kkkbfx.mongodb.net/?authDB")
+mongoose.connect("mongodb+srv://meetysharma15_db_user:dbEty1234@cluster0.8kkkbfx.mongodb.net/authDB")
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
-
 
 // 📌 Schema
 const examSchema = new mongoose.Schema({
@@ -154,7 +154,6 @@ app.post("/reset-password", async (req, res) => {
 // app.listen(3000, () => { 
 //     console.log("Server running on port 3000"); });
 const PORT = process.env.PORT || 3000;
-
 app.listen(PORT, () => {
-    console.log("Server running");
+    console.log("Server running on port " + PORT);
 });
