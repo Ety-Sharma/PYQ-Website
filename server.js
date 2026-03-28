@@ -56,7 +56,7 @@ app.use(session({
 
 // 🔗 Connect to MongoDB
 // mongoose.connect("mongodb://127.0.0.1:27017/pyqadda")
-mongoose.connect("mongodb+srv://meetysharma15_db_user:dbEty1234@cluster0.8kkkbfx.mongodb.net/authDB")
+mongoose.connect("mongodb+srv://meetysharma15_db_user:dbEty1234@cluster0.8kkkbfx.mongodb.net/pyqadda")
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 

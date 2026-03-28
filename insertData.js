@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/pyqadda");
+// mongoose.connect("mongodb://127.0.0.1:27017/pyqadda");
+mongoose.connect("mongodb+srv://meetysharma15_db_user:dbEty1234@cluster0.8kkkbfx.mongodb.net/pyqadda")
 
 const examSchema = new mongoose.Schema({
     subject: String,
