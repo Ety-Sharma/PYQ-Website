@@ -19,7 +19,7 @@ async function insert() {
             pdf: "/pdf/signalandsystem25.pdf"
         },
         {
-            subject: "Discrete Math",
+            subject: "Discrete Math 2025",
             year: "2025",
             pdf: "/pdf/Discretemath2025.pdf"
         },
@@ -29,8 +29,33 @@ async function insert() {
             pdf: "/pdf/COA2025.pdf" 
         },
         {
-            subject: "DAA",
+            subject: "DAA 2025",
             year: "2025",
+            pdf: "/pdf/DAA2025.pdf" 
+        },
+        {
+            subject: "computer networks",
+            year: "2022,23,24",
+            pdf: "/pdf/DAA2025.pdf" 
+        },
+         {
+            subject: "cyber law and ethics",
+            year: "2022",
+            pdf: "/pdf/DAA2025.pdf" 
+        },
+         {
+            subject: "DAA19,20,23,24",
+            year: "2019,20,23,24",
+            pdf: "/pdf/DAA2025.pdf" 
+        },
+         {
+            subject: "ICT",
+            year: "2022",
+            pdf: "/pdf/DAA2025.pdf" 
+        },
+         {
+            subject: "Intelligent System",
+            year: "2022,23,24",
             pdf: "/pdf/DAA2025.pdf" 
         },
         {
