@@ -36,27 +36,27 @@ async function insert() {
         {
             subject: "computer networks",
             year: "2022,23,24",
-            pdf: "/pdf/DAA2025.pdf" 
+            pdf: "/pdf/computer networks 22,23,24.pdf" 
         },
          {
             subject: "cyber law and ethics",
             year: "2022",
-            pdf: "/pdf/DAA2025.pdf" 
+            pdf: "/pdf/cyber law and ethics22.pdf" 
         },
          {
             subject: "DAA19,20,23,24",
             year: "2019,20,23,24",
-            pdf: "/pdf/DAA2025.pdf" 
+            pdf: "/pdf/Design & analysis20,23,24,19.pdf" 
         },
          {
             subject: "ICT",
             year: "2022",
-            pdf: "/pdf/DAA2025.pdf" 
+            pdf: "/pdf/ICT 2022.pdf" 
         },
          {
             subject: "Intelligent System",
             year: "2022,23,24",
-            pdf: "/pdf/DAA2025.pdf" 
+            pdf: "/pdf/Intelligent system 22,23,24.pdf" 
         },
         {
             subject: "Economics For Engineers",
