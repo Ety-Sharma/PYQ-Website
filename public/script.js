@@ -201,6 +201,8 @@ function showExams(list) {
         card.innerHTML = `
             <div class="card-icon">📄</div>
             <h3>${examName}</h3>
+            <br>
+            <button class="download-btn">Download</button>
         `;
 
         card.onclick = () => {
@@ -210,6 +212,16 @@ function showExams(list) {
         container.appendChild(card);
     });
 }
+const downloadBtn = card.querySelector(".download-btn");
+
+downloadBtn.onclick = (e) => {
+    e.stopPropagation(); // prevents card click
+
+    const link = document.createElement("a");
+    link.href = item.pdf;
+    link.download = "";
+    link.click();
+};
 
 // 🔹 Search + Suggestions (CONNECTED TO DATABASE)
 searchInput.addEventListener("keyup", async function () {
