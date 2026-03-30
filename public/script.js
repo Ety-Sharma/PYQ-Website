@@ -208,12 +208,10 @@ function showExams(list) {
         card.onclick = () => {
             window.location.href= item.pdf; // open PDF
         };
+    //Download button
 
-        container.appendChild(card);
-    });
-}
 const downloadBtn = card.querySelector(".download-btn");
-
+if(downloadBtn) {
 downloadBtn.onclick = (e) => {
     e.stopPropagation(); // prevents card click
 
@@ -222,6 +220,10 @@ downloadBtn.onclick = (e) => {
     link.download = "";
     link.click();
 };
+}
+    container.appendChild(card);
+});
+}
 
 // 🔹 Search + Suggestions (CONNECTED TO DATABASE)
 searchInput.addEventListener("keyup", async function () {
