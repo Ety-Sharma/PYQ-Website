@@ -232,6 +232,18 @@ input:focus{
     background-color: antiquewhite;
     transform: scale(1.05);
 }
+.main-footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px
+}
+.main-footer a:hover{
+    text-decoration: underline;
+}
+.main-footer {
+    flex-wrap: wrap;
+    text-align: center;
+}
 
 /* ================= MOBILE RESPONSIVE ================= */
 @media (max-width: 600px) {
