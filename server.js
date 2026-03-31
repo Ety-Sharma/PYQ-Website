@@ -149,6 +149,12 @@ app.post("/reset-password", async (req, res) => {
 
     res.send("Password updated");
 });
+//user-counter
+app.get("/user-count", async(req,res) => {
+    const count =await
+    User.countDocuments();
+    res.json({ totalUsers: count });
+});
 
 // 🚀 Server start 
 // app.listen(3000, () => { 
