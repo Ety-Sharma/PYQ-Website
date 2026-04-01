@@ -1,3 +1,6 @@
+body{
+    padding-bottom: 80px;
+}
 .landing-page{
     background-color:rgb(175, 39, 39);
     text-align: center;
@@ -36,9 +39,12 @@
      background-color: rgb(84, 71, 56);
       color: aliceblue;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
     align-items: center; 
-    font-size: 18px;
+    gap: 8px;
+    z-index: 999;
 }
 /* Progress Bar */
 .progress-container {
@@ -94,7 +100,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 100vh;
+  min-height: 100vh;
    
    margin-top: 0;
    padding-top: 70px;
@@ -235,7 +241,8 @@ input:focus{
 .main-footer a {
     color: white;
     text-decoration: none;
-    margin: 0 10px
+    margin: 5px;
+    font-size: 14px;
 }
 .main-footer a:hover{
     text-decoration: underline;
@@ -258,12 +265,16 @@ input:focus{
 
     /* Footer */
     .main-footer {
+
         height: 60px;
         font-size: 14px;
         padding: 5px;
         text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
+    
     /* Landing page text */
     .landing-page {
         font-size: 20px;
@@ -308,4 +319,5 @@ input:focus{
     .typeOfExam {
         padding: 80px 10px;
     }
+
 }
