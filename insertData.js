@@ -34,29 +34,44 @@ async function insert() {
             pdf: "/pdf/DAA2025.pdf" 
         },
         {
-            subject: "computer networks",
-            year: "2022,23,24",
-            pdf: "/pdf/computer networks 22,23,24.pdf" 
+            subject: "Computer Network",
+            year: "2022,23,24,25",
+            pdf: "/pdf/Computer Network.pdf" 
         },
          {
             subject: "cyber law and ethics",
-            year: "2022",
-            pdf: "/pdf/cyber law and ethics22.pdf" 
+            year: "2022,23,24",
+            pdf: "/pdf/Cyber Law and Ethics22,23,24.pdf" 
         },
          {
-            subject: "DAA19,20,23,24",
+            subject: "DAA",
             year: "2019,20,23,24",
             pdf: "/pdf/Design & analysis20,23,24,19.pdf" 
         },
          {
             subject: "ICT",
-            year: "2022",
-            pdf: "/pdf/ICT 2022.pdf" 
+            year: "2022,23,24,25",
+            pdf: "/pdf/ICT 22,23,24.pdf" 
+        },
+        {
+            subject: "Distributed Systems",
+            year: "2022,23,24,25",
+            pdf: "/pdf/Distributed systems.pdf" 
+        },
+        {
+            subject: "Message of Bhagvad Gita",
+            year: "2024",
+            pdf: "/pdf/Message of Bhagvad Gita.pdf" 
+        },
+         {
+            subject: "Software Engineering",
+            year: "2024",
+            pdf: "/pdf/Software Engineering.pdf" 
         },
          {
             subject: "Intelligent System",
-            year: "2022,23,24",
-            pdf: "/pdf/Intelligent system 22,23,24.pdf" 
+            year: "2022,23,24,25",
+            pdf: "/pdf/Intelligent Systems.pdf" 
         },
         {
             subject: "Economics For Engineers",
